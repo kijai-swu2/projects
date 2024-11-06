@@ -7,11 +7,14 @@
 
 import UIKit
 import Alamofire
+import Kingfisher
 
 class MainTableViewController: UITableViewController {
-
+    var sales: [Sale]? = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 80
         
         // isLoggedIn이 false이거나 값 자체가 없을 때 로그인 페이지를 표기
         if !UserDefaults.standard.bool(forKey: "isLoggedIn") { // 해당 키의 값이 없을 경우 false, 반대일 경우 true를 반환
@@ -20,57 +23,70 @@ class MainTableViewController: UITableViewController {
                 present(loginVC, animated: true)
             }
         } else {
-            loadList()
+            guard let host = Bundle.main.object(forInfoDictionaryKey: "HOST") as? String,
+                  let token = UserDefaults.standard.string(forKey: "token")
+            else { return }
+            let endPoint = "https://\(host)/sales"
+            
+            let headers: HTTPHeaders = [ "Authorization": "Bearer \(token)" ]
+            
+            AF.request(endPoint, headers: headers).responseDecodable(of: SalesResult.self) { response in
+                switch response.result {
+                case .success(let salesResult):
+                    self.sales = salesResult.documents
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
         }
         
     }
-
+    
     // MARK: - Table view data source
-
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return sales?.count ?? 0
     }
-
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sale", for: indexPath)
         
+        guard let sale = sales?[indexPath.row]
+        else { return cell }
         
-
+        let image = cell.viewWithTag(1) as? UIImageView
+        let strImageURL = "https://sayangpakitcat.blob.core.windows.net/yangpa/\(sale.photo)"
+        let imageURL = URL(string: strImageURL)
+        image?.kf.setImage(with: imageURL)
+        
+        let txtName = cell.viewWithTag(2) as? UILabel
+        txtName?.text = sale.productName
+        
+        let txtPrice = cell.viewWithTag(3) as? UILabel
+        txtPrice?.text = "\(String(sale.price))원"
+        
+        let txtUserName = cell.viewWithTag(4) as? UILabel
+        txtUserName?.text = sale.userName
+        
+        let txtCreatedAt = cell.viewWithTag(5) as? UILabel
+        txtCreatedAt?.text = String(sale.createdAt.prefix(10))
+        
         return cell
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    func loadList() {
-    let endPoint = "\(host)/sales"
-                guard let token = UserDefaults.standard.string(forKey: "token") else { return }
-        let headers: HTTPHeaders = [ "Authorization": "\(token)" ]
-        AF.request(endPoint, headers: headers).responseDecodable(of: SalesResult.self) { response in
-//        AF.request(endPoint).responseDecodable(of: SalesResult.self) { response in
-            
-            if let data = response.data {
-                let dataString = String(data: data, encoding: .utf8) ?? "Data could not be printed"
-                print("Response Data as String:", dataString)
-            }
-            
-            print(token)
-            switch response.result {
-            case .success(let salesResult):
-                print(salesResult.documents)
-            case .failure(let error):
-                print(error.localizedDescription)
-            }
-        }
-    }
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
 }

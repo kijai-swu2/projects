@@ -14,7 +14,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -23,8 +22,10 @@ class LoginViewController: UIViewController {
             "userName": txtId.text!,
             "password": txtPassword.text!
         ]
-        let endPoint = "\(host)/members/sign-in"
-    
+        
+        guard let host = Bundle.main.object(forInfoDictionaryKey: "HOST") as? String else { return }
+        let endPoint = "https://\(host)/members/sign-in"
+        
         let request = AF.request(endPoint, method: .post, parameters: paramaters)
         request.responseDecodable(of: SignInResult.self) { response in
             switch response.result {
@@ -34,7 +35,6 @@ class LoginViewController: UIViewController {
                     UserDefaults.standard.set(signInResult.member.userName, forKey: "userName")
                     UserDefaults.standard.set(true, forKey: "isLoggedIn")
                     self.dismiss(animated: true) // 성공 시 모달 가리기
-                    print(signInResult.token)
                 } else {
                     let alert = UIAlertController(title: "로그인 실패", message: signInResult.message, preferredStyle: .alert)
                     let action = UIAlertAction(title: "확인", style: .default)
@@ -52,6 +52,7 @@ class LoginViewController: UIViewController {
             "userName": txtId.text!,
             "password": txtPassword.text!
         ]
+        guard let host = Bundle.main.object(forInfoDictionaryKey: "HOST") else { return }
         let endPoint = "\(host)/members/sign-up"
         
         let request = AF.request(endPoint, method: .post, parameters: paramaters)
@@ -71,15 +72,15 @@ class LoginViewController: UIViewController {
         }
         
     }
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

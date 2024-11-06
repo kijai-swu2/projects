@@ -14,6 +14,7 @@ struct Sale: Codable {
     let price: Int
     let photo: String
     let userName: String
+    let createdAt: String
 }
 
 struct SalesResult: Codable {

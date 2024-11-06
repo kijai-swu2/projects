@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		1B1C6A9D2CDB356F00D04DAD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1C6A9C2CDB356F00D04DAD /* Alamofire */; };
 		1B1C6AA02CDB357E00D04DAD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1C6A9F2CDB357E00D04DAD /* Kingfisher */; };
-		1BEE9A3C2CDB67680037FE9B /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE9A3B2CDB67680037FE9B /* Debug.xcconfig */; };
-		1BEE9A3E2CDB677C0037FE9B /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1BEE9A3D2CDB677C0037FE9B /* Release.xcconfig */; };
+		1B5A12902CDBB0E30054C157 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */; };
+		1B5A12922CDBB0F30054C157 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B5A12912CDBB0F30054C157 /* Release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B1C6A7E2CDB306D00D04DAD /* Yangpa-market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yangpa-market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BEE9A3B2CDB67680037FE9B /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		1BEE9A3D2CDB677C0037FE9B /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		1B5A12912CDBB0F30054C157 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,8 +56,8 @@
 		1B1C6A752CDB306D00D04DAD = {
 			isa = PBXGroup;
 			children = (
-				1BEE9A3B2CDB67680037FE9B /* Debug.xcconfig */,
-				1BEE9A3D2CDB677C0037FE9B /* Release.xcconfig */,
+				1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */,
+				1B5A12912CDBB0F30054C157 /* Release.xcconfig */,
 				1B1C6A802CDB306D00D04DAD /* Yangpa-market */,
 				1B1C6A7F2CDB306D00D04DAD /* Products */,
 			);
@@ -141,8 +141,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BEE9A3C2CDB67680037FE9B /* Debug.xcconfig in Resources */,
-				1BEE9A3E2CDB677C0037FE9B /* Release.xcconfig in Resources */,
+				1B5A12902CDBB0E30054C157 /* Debug.xcconfig in Resources */,
+				1B5A12922CDBB0F30054C157 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,11 +161,14 @@
 /* Begin XCBuildConfiguration section */
 		1B1C6A922CDB306E00D04DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GF88PBK7J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Yangpa-market/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -180,6 +183,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.or.womanup.nambu.kijai.Yangpa-market";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -188,11 +192,14 @@
 		};
 		1B1C6A932CDB306E00D04DAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5A12912CDBB0F30054C157 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8GF88PBK7J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Yangpa-market/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -207,6 +214,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "kr.or.womanup.nambu.kijai.Yangpa-market";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -215,6 +223,7 @@
 		};
 		1B1C6A942CDB306E00D04DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -278,6 +287,7 @@
 		};
 		1B1C6A952CDB306E00D04DAD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B5A12912CDBB0F30054C157 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

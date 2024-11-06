@@ -54,7 +54,8 @@ class AddSaleViewController: UIViewController {
     }
     
     @IBAction func submitSale(_ sender: Any) {
-        let endPoint = "\(host)/sales"
+        guard let host = Bundle.main.object(forInfoDictionaryKey: "HOST") as? String else { return }
+        let endPoint = "https://\(host)/sales"
         
         /* MARK: Form 처리하기 */
         guard let imageData = imageView.image?.jpegData(compressionQuality: 0.8) else { return }
