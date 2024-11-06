@@ -1,0 +1,5 @@
+{
+  "appService.zipIgnorePattern": ["node_modules{,/**}", ".vscode{,/**}"],
+  "appService.defaultWebAppToDeploy": "/subscriptions/e09c8579-ef7a-47a9-8973-ad2a7db9302d/resourceGroups/yangpa-market/providers/Microsoft.Web/sites/yangpa-market-kitcat",
+  "appService.deploySubpath": "."
+}
