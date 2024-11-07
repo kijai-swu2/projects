@@ -22,27 +22,28 @@ class MainTableViewController: UITableViewController {
                 loginVC.modalPresentationStyle = .fullScreen
                 present(loginVC, animated: true)
             }
-        } else {
-            guard let host = Bundle.main.object(forInfoDictionaryKey: "HOST") as? String,
-                  let token = UserDefaults.standard.string(forKey: "token")
-            else { return }
-            let endPoint = "https://\(host)/sales"
-            
-            let headers: HTTPHeaders = [ "Authorization": "Bearer \(token)" ]
-            
-            AF.request(endPoint, headers: headers).responseDecodable(of: SalesResult.self) { response in
-                switch response.result {
-                case .success(let salesResult):
-                    self.sales = salesResult.documents
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                    }
-                case .failure(let error):
-                    print(error.localizedDescription)
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        guard let host = Bundle.main.object(forInfoDictionaryKey: "HOST") as? String,
+              let token = UserDefaults.standard.string(forKey: "token")
+        else { return }
+        let endPoint = "https://\(host)/sales"
+        
+        let headers: HTTPHeaders = [ "Authorization": "Bearer \(token)" ]
+        
+        AF.request(endPoint, headers: headers).responseDecodable(of: SalesResult.self) { response in
+            switch response.result {
+            case .success(let salesResult):
+                self.sales = salesResult.documents
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
                 }
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
-        
     }
     
     // MARK: - Table view data source
@@ -58,11 +59,12 @@ class MainTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sale", for: indexPath)
         
-        guard let sale = sales?[indexPath.row]
+        guard let sale = sales?[indexPath.row],
+              let strURL = Bundle.main.object(forInfoDictionaryKey: "STR_URL")
         else { return cell }
         
         let image = cell.viewWithTag(1) as? UIImageView
-        let strImageURL = "https://sayangpakitcat.blob.core.windows.net/yangpa/\(sale.photo)"
+        let strImageURL = "https://\(strURL)/\(sale.photo)"
         let imageURL = URL(string: strImageURL)
         image?.kf.setImage(with: imageURL)
         
@@ -80,13 +82,15 @@ class MainTableViewController: UITableViewController {
         
         return cell
     }
-    /*
+    
      // MARK: - Navigation
      
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
+         guard let detailVC = segue.destination as? SaleDetailViewController,
+               let selectedRow = tableView.indexPathForSelectedRow
+         else { return }
+         
+         detailVC.sale = sales![selectedRow.row]
      }
-     */
+    
 }
