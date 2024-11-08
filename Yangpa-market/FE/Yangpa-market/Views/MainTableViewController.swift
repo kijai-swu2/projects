@@ -90,7 +90,8 @@ class MainTableViewController: UITableViewController {
                let selectedRow = tableView.indexPathForSelectedRow
          else { return }
          
-         detailVC.sale = sales![selectedRow.row]
+         detailVC.saleID = sales![selectedRow.row].id
+         print(detailVC)
      }
     
 }
