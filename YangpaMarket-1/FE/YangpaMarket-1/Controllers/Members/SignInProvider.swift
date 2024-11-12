@@ -27,9 +27,12 @@ class SignInProvider: ObservableObject {
         AF.request(endPoint, method: .post, parameters: params).responseDecodable(of: SignInResult.self) { response in
             switch response.result {
             case .success(let signInResult):
+                print(signInResult)
                 UserDefaults.standard.set(signInResult.token, forKey: "token")
                 status.isLoggedIn = true
-                print(status.isLoggedIn)
+                status.userName = signInResult.member.userName
+                print(signInResult.member.userName)
+                print(status.userName)
             case .failure(let error):
                 print(error.localizedDescription)
             }

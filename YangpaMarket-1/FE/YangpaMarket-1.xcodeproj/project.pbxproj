@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B694D082CE3BBD300F67640 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B694D072CE3BBD300F67640 /* Release.xcconfig */; };
+		1B694D092CE3BBD300F67640 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B694D062CE3BBD300F67640 /* Debug.xcconfig */; };
 		1BFBCB742CE32350007BC0FA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1BFBCB732CE32350007BC0FA /* Alamofire */; };
 		1BFBCB892CE32FEB007BC0FA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1BFBCB882CE32FEB007BC0FA /* Kingfisher */; };
-		B1B980CE2CE357D700FA172F /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B1B980CD2CE357D700FA172F /* Debug.xcconfig */; };
-		B1B980D02CE357EE00FA172F /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B1B980CF2CE357EE00FA172F /* Release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B694D062CE3BBD300F67640 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		1B694D072CE3BBD300F67640 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		1BFBCAFB2CE31AD8007BC0FA /* YangpaMarket-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YangpaMarket-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1B980CD2CE357D700FA172F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		B1B980CF2CE357EE00FA172F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,8 +56,8 @@
 		1BFBCAF22CE31AD8007BC0FA = {
 			isa = PBXGroup;
 			children = (
-				B1B980CD2CE357D700FA172F /* Debug.xcconfig */,
-				B1B980CF2CE357EE00FA172F /* Release.xcconfig */,
+				1B694D062CE3BBD300F67640 /* Debug.xcconfig */,
+				1B694D072CE3BBD300F67640 /* Release.xcconfig */,
 				1BFBCAFD2CE31AD8007BC0FA /* YangpaMarket-1 */,
 				1BFBCAFC2CE31AD8007BC0FA /* Products */,
 			);
@@ -141,8 +141,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1B980D02CE357EE00FA172F /* Release.xcconfig in Resources */,
-				B1B980CE2CE357D700FA172F /* Debug.xcconfig in Resources */,
+				1B694D082CE3BBD300F67640 /* Release.xcconfig in Resources */,
+				1B694D092CE3BBD300F67640 /* Debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +161,7 @@
 /* Begin XCBuildConfiguration section */
 		1BFBCB072CE31ADA007BC0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B980CD2CE357D700FA172F /* Debug.xcconfig */;
+			baseConfigurationReference = 1B694D062CE3BBD300F67640 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -225,7 +225,7 @@
 		};
 		1BFBCB082CE31ADA007BC0FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B980CF2CE357EE00FA172F /* Release.xcconfig */;
+			baseConfigurationReference = 1B694D072CE3BBD300F67640 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -282,7 +282,7 @@
 		};
 		1BFBCB0A2CE31ADA007BC0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B980CD2CE357D700FA172F /* Debug.xcconfig */;
+			baseConfigurationReference = 1B694D062CE3BBD300F67640 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +313,7 @@
 		};
 		1BFBCB0B2CE31ADA007BC0FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B980CF2CE357EE00FA172F /* Release.xcconfig */;
+			baseConfigurationReference = 1B694D072CE3BBD300F67640 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

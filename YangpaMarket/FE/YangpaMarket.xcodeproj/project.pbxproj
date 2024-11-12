@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		1B1C6A9D2CDB356F00D04DAD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1C6A9C2CDB356F00D04DAD /* Alamofire */; };
 		1B1C6AA02CDB357E00D04DAD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1C6A9F2CDB357E00D04DAD /* Kingfisher */; };
-		B1B980F02CE3AB9A00FA172F /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B1B980EF2CE3AB9A00FA172F /* Debug.xcconfig */; };
-		B1B980F22CE3ABE700FA172F /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B1B980F12CE3ABE700FA172F /* Release.xcconfig */; };
+		1B694D0C2CE3BC0200F67640 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B694D0A2CE3BC0200F67640 /* Debug.xcconfig */; };
+		1B694D0D2CE3BC0200F67640 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B694D0B2CE3BC0200F67640 /* Release.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B1C6A7E2CDB306D00D04DAD /* YangpaMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YangpaMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1B980EF2CE3AB9A00FA172F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		B1B980F12CE3ABE700FA172F /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		1B694D0A2CE3BC0200F67640 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		1B694D0B2CE3BC0200F67640 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -56,8 +56,8 @@
 		1B1C6A752CDB306D00D04DAD = {
 			isa = PBXGroup;
 			children = (
-				B1B980EF2CE3AB9A00FA172F /* Debug.xcconfig */,
-				B1B980F12CE3ABE700FA172F /* Release.xcconfig */,
+				1B694D0A2CE3BC0200F67640 /* Debug.xcconfig */,
+				1B694D0B2CE3BC0200F67640 /* Release.xcconfig */,
 				1B1C6A802CDB306D00D04DAD /* YangpaMarket */,
 				1B1C6A7F2CDB306D00D04DAD /* Products */,
 			);
@@ -141,8 +141,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1B980F02CE3AB9A00FA172F /* Debug.xcconfig in Resources */,
-				B1B980F22CE3ABE700FA172F /* Release.xcconfig in Resources */,
+				1B694D0C2CE3BC0200F67640 /* Debug.xcconfig in Resources */,
+				1B694D0D2CE3BC0200F67640 /* Release.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,7 +161,7 @@
 /* Begin XCBuildConfiguration section */
 		1B1C6A922CDB306E00D04DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B980EF2CE3AB9A00FA172F /* Debug.xcconfig */;
+			baseConfigurationReference = 1B694D0A2CE3BC0200F67640 /* Debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -192,7 +192,7 @@
 		};
 		1B1C6A932CDB306E00D04DAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B980F12CE3ABE700FA172F /* Release.xcconfig */;
+			baseConfigurationReference = 1B694D0B2CE3BC0200F67640 /* Release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -223,7 +223,7 @@
 		};
 		1B1C6A942CDB306E00D04DAD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B980EF2CE3AB9A00FA172F /* Debug.xcconfig */;
+			baseConfigurationReference = 1B694D0A2CE3BC0200F67640 /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -287,7 +287,7 @@
 		};
 		1B1C6A952CDB306E00D04DAD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B1B980F12CE3ABE700FA172F /* Release.xcconfig */;
+			baseConfigurationReference = 1B694D0B2CE3BC0200F67640 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;

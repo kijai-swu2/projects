@@ -26,8 +26,10 @@ struct SignInResult: Codable {
 
 class LoginStatus: ObservableObject {
     @Published var isLoggedIn: Bool
+    @Published var userName: String
     
     init() {
         self.isLoggedIn = false
+        self.userName = ""
     }
 }

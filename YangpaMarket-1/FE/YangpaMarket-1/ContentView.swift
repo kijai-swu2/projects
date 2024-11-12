@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var loginStatus: LoginStatus
     
     var body: some View {
         MainView()
@@ -16,4 +17,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .environmentObject(LoginStatus())
 }

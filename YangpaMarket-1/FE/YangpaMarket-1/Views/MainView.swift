@@ -15,6 +15,7 @@ struct MainView: View {
     var body: some View {
         VStack {
             if loginStatus.isLoggedIn || (UserDefaults.standard.string(forKey: "token") != nil) {
+//            if loginStatus.isLoggedIn {
                 SalesList()
             } else {
                 LoginView()
