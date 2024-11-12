@@ -20,7 +20,7 @@ struct LoginView: View {
                 Text("아이디")
                 TextField("", text: $id)
                     .padding()
-                    .background(Color.gray)
+                    .background(Color.textfield)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
                     .autocapitalization(.none)
             }
@@ -29,7 +29,7 @@ struct LoginView: View {
                 Text("비밀번호")
                 SecureField("", text: $password)
                     .padding()
-                    .background(Color.gray)
+                    .background(Color.textfield)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
             }
             .padding(.bottom, 30)

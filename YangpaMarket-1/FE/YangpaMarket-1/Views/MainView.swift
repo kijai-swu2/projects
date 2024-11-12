@@ -10,10 +10,11 @@ import SwiftUI
 struct MainView: View {
     @StateObject var signInProvider = SignInProvider()
     @EnvironmentObject var loginStatus: LoginStatus
+//    let
     
     var body: some View {
         VStack {
-            if loginStatus.isLoggedIn {
+            if loginStatus.isLoggedIn || (UserDefaults.standard.string(forKey: "token") != nil) {
                 SalesList()
             } else {
                 LoginView()

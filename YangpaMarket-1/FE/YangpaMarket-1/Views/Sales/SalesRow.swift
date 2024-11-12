@@ -28,6 +28,7 @@ struct SalesRow: View {
                     .frame(width: 50, height: 40)
                     .foregroundStyle(Color.gray)
             }
+            .padding(.trailing, 5)
             VStack {
                 HStack {
                     Text(sale.productName)
