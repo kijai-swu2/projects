@@ -11,12 +11,15 @@ struct SalesList: View {
     @StateObject var salesProvider = SalesProvider()
     
     var body: some View {
-        List(salesProvider.sales) { sale in
-            SalesRow(sale: sale)
-        }
-        .listStyle(.plain)
-        .onAppear {
-            salesProvider.getSales()
+        HStack {
+            List(salesProvider.sales) { sale in
+                SalesRow(sale: sale)
+            }
+            .listStyle(.plain)
+            .onAppear {
+                salesProvider.getSales()
+            }
+            
         }
     }
 }

@@ -10,9 +10,9 @@ import SwiftUI
 struct LoginView: View {
     @StateObject var signInProvider = SignInProvider()
     @StateObject var signUpProvider = SignUpProvider()
-    @State var id: String = ""
-    @State var password: String = ""
-    @State var isLoggedIn = false
+    @EnvironmentObject var loginStatus: LoginStatus
+    @State var id: String = "kitcat3"
+    @State var password: String = "kitcat3"
     
     var body: some View {
         VStack {
@@ -20,7 +20,7 @@ struct LoginView: View {
                 Text("아이디")
                 TextField("", text: $id)
                     .padding()
-                    .background(Color.textField)
+                    .background(Color.gray)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
                     .autocapitalization(.none)
             }
@@ -29,31 +29,30 @@ struct LoginView: View {
                 Text("비밀번호")
                 SecureField("", text: $password)
                     .padding()
-                    .background(Color.textField)
+                    .background(Color.gray)
                     .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
             }
             .padding(.bottom, 30)
             VStack {
                 Button("로그인") {
-                    signInProvider.signIn(id: id, password: password)
+                    signInProvider.signIn(id: id, password: password, status: loginStatus)
                 }
+                .frame(maxWidth: .infinity)
                 .padding()
                 .background(Color.accentColor)
                 .foregroundStyle(Color.white)
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
-                .frame(maxWidth: .infinity)
                 Text("또는 위의 정보로")
                     .font(.subheadline)
                 Button("회원가입") {
                     signUpProvider.signUp(id: id, password: password)
                 }
+                .frame(maxWidth: .infinity)
                 .padding()
                 .background(Color.secondary)
                 .foregroundStyle(Color.white)
                 .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
-                .frame(maxWidth: .infinity)
             }
-            .frame(maxWidth: .infinity, alignment: .center)
         }
         
         .padding()
@@ -62,4 +61,5 @@ struct LoginView: View {
 
 #Preview {
     LoginView()
+        .environmentObject(LoginStatus())
 }

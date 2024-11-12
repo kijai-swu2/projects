@@ -23,3 +23,11 @@ struct SignInResult: Codable {
     let member: Member
     let message: String
 }
+
+class LoginStatus: ObservableObject {
+    @Published var isLoggedIn: Bool
+    
+    init() {
+        self.isLoggedIn = false
+    }
+}

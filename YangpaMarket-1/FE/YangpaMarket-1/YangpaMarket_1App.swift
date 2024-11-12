@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct YangpaMarket_1App: App {
+    @StateObject var loginStatus = LoginStatus()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(loginStatus)
         }
     }
 }

@@ -11,9 +11,8 @@ import Alamofire
 class SignInProvider: ObservableObject {
     @Published var id: String = ""
     @Published var password: String = ""
-    @Published var isLoggedIn = false
     
-    func signIn(id: String, password: String) {
+    func signIn(id: String, password: String, status: LoginStatus) {
         guard let appURL = Bundle.main.object(forInfoDictionaryKey: "APP_URL"),
               let signInURI = Bundle.main.object(forInfoDictionaryKey: "SIGN_IN_ROUTER")
         else { return }
@@ -28,9 +27,9 @@ class SignInProvider: ObservableObject {
         AF.request(endPoint, method: .post, parameters: params).responseDecodable(of: SignInResult.self) { response in
             switch response.result {
             case .success(let signInResult):
-                print(signInResult)
                 UserDefaults.standard.set(signInResult.token, forKey: "token")
-                self.isLoggedIn = true
+                status.isLoggedIn = true
+                print(status.isLoggedIn)
             case .failure(let error):
                 print(error.localizedDescription)
             }

@@ -23,3 +23,4 @@ struct SalesResult: Codable {
     let documents: [Sale]
     let message: String
 }
+
