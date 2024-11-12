@@ -7,66 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B1C6A9D2CDB356F00D04DAD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1C6A9C2CDB356F00D04DAD /* Alamofire */; };
-		1B1C6AA02CDB357E00D04DAD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1B1C6A9F2CDB357E00D04DAD /* Kingfisher */; };
-		1B5A12902CDBB0E30054C157 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */; };
-		1B5A12922CDBB0F30054C157 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1B5A12912CDBB0F30054C157 /* Release.xcconfig */; };
+		1BFBCB6A2CE3226A007BC0FA /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1BFBCB692CE3226A007BC0FA /* Debug.xcconfig */; };
+		1BFBCB742CE32350007BC0FA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 1BFBCB732CE32350007BC0FA /* Alamofire */; };
+		1BFBCB782CE32381007BC0FA /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1BFBCB772CE32381007BC0FA /* Release.xcconfig */; };
+		1BFBCB892CE32FEB007BC0FA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1BFBCB882CE32FEB007BC0FA /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B1C6A7E2CDB306D00D04DAD /* Yangpa-market.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yangpa-market.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		1B5A12912CDBB0F30054C157 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		1BFBCAFB2CE31AD8007BC0FA /* YangpaMarket-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YangpaMarket-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BFBCB692CE3226A007BC0FA /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		1BFBCB772CE32381007BC0FA /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1B1C6A902CDB306E00D04DAD /* Exceptions for "Yangpa-market" folder in "Yangpa-market" target */ = {
+		1BFBCB762CE32369007BC0FA /* Exceptions for "YangpaMarket-1" folder in "YangpaMarket-1" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 1B1C6A7D2CDB306D00D04DAD /* Yangpa-market */;
+			target = 1BFBCAFA2CE31AD8007BC0FA /* YangpaMarket-1 */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1B1C6A802CDB306D00D04DAD /* Yangpa-market */ = {
+		1BFBCAFD2CE31AD8007BC0FA /* YangpaMarket-1 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1B1C6A902CDB306E00D04DAD /* Exceptions for "Yangpa-market" folder in "Yangpa-market" target */,
+				1BFBCB762CE32369007BC0FA /* Exceptions for "YangpaMarket-1" folder in "YangpaMarket-1" target */,
 			);
-			path = "Yangpa-market";
+			path = "YangpaMarket-1";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B1C6A7B2CDB306D00D04DAD /* Frameworks */ = {
+		1BFBCAF82CE31AD8007BC0FA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B1C6AA02CDB357E00D04DAD /* Kingfisher in Frameworks */,
-				1B1C6A9D2CDB356F00D04DAD /* Alamofire in Frameworks */,
+				1BFBCB892CE32FEB007BC0FA /* Kingfisher in Frameworks */,
+				1BFBCB742CE32350007BC0FA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B1C6A752CDB306D00D04DAD = {
+		1BFBCAF22CE31AD8007BC0FA = {
 			isa = PBXGroup;
 			children = (
-				1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */,
-				1B5A12912CDBB0F30054C157 /* Release.xcconfig */,
-				1B1C6A802CDB306D00D04DAD /* Yangpa-market */,
-				1B1C6A7F2CDB306D00D04DAD /* Products */,
+				1BFBCB692CE3226A007BC0FA /* Debug.xcconfig */,
+				1BFBCB772CE32381007BC0FA /* Release.xcconfig */,
+				1BFBCAFD2CE31AD8007BC0FA /* YangpaMarket-1 */,
+				1BFBCAFC2CE31AD8007BC0FA /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1B1C6A7F2CDB306D00D04DAD /* Products */ = {
+		1BFBCAFC2CE31AD8007BC0FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B1C6A7E2CDB306D00D04DAD /* Yangpa-market.app */,
+				1BFBCAFB2CE31AD8007BC0FA /* YangpaMarket-1.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,82 +74,82 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1B1C6A7D2CDB306D00D04DAD /* Yangpa-market */ = {
+		1BFBCAFA2CE31AD8007BC0FA /* YangpaMarket-1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1B1C6A912CDB306E00D04DAD /* Build configuration list for PBXNativeTarget "Yangpa-market" */;
+			buildConfigurationList = 1BFBCB092CE31ADA007BC0FA /* Build configuration list for PBXNativeTarget "YangpaMarket-1" */;
 			buildPhases = (
-				1B1C6A7A2CDB306D00D04DAD /* Sources */,
-				1B1C6A7B2CDB306D00D04DAD /* Frameworks */,
-				1B1C6A7C2CDB306D00D04DAD /* Resources */,
+				1BFBCAF72CE31AD8007BC0FA /* Sources */,
+				1BFBCAF82CE31AD8007BC0FA /* Frameworks */,
+				1BFBCAF92CE31AD8007BC0FA /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1B1C6A802CDB306D00D04DAD /* Yangpa-market */,
+				1BFBCAFD2CE31AD8007BC0FA /* YangpaMarket-1 */,
 			);
-			name = "Yangpa-market";
+			name = "YangpaMarket-1";
 			packageProductDependencies = (
-				1B1C6A9C2CDB356F00D04DAD /* Alamofire */,
-				1B1C6A9F2CDB357E00D04DAD /* Kingfisher */,
+				1BFBCB732CE32350007BC0FA /* Alamofire */,
+				1BFBCB882CE32FEB007BC0FA /* Kingfisher */,
 			);
-			productName = "Yangpa-market";
-			productReference = 1B1C6A7E2CDB306D00D04DAD /* Yangpa-market.app */;
+			productName = "YangpaMarket-1";
+			productReference = 1BFBCAFB2CE31AD8007BC0FA /* YangpaMarket-1.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1B1C6A762CDB306D00D04DAD /* Project object */ = {
+		1BFBCAF32CE31AD8007BC0FA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
-					1B1C6A7D2CDB306D00D04DAD = {
+					1BFBCAFA2CE31AD8007BC0FA = {
 						CreatedOnToolsVersion = 16.1;
 					};
 				};
 			};
-			buildConfigurationList = 1B1C6A792CDB306D00D04DAD /* Build configuration list for PBXProject "Yangpa-market" */;
+			buildConfigurationList = 1BFBCAF62CE31AD8007BC0FA /* Build configuration list for PBXProject "YangpaMarket-1" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 1B1C6A752CDB306D00D04DAD;
+			mainGroup = 1BFBCAF22CE31AD8007BC0FA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				1B1C6A9B2CDB356F00D04DAD /* XCRemoteSwiftPackageReference "Alamofire" */,
-				1B1C6A9E2CDB357E00D04DAD /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				1BFBCB722CE32350007BC0FA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				1BFBCB872CE32FEB007BC0FA /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1B1C6A7F2CDB306D00D04DAD /* Products */;
+			productRefGroup = 1BFBCAFC2CE31AD8007BC0FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B1C6A7D2CDB306D00D04DAD /* Yangpa-market */,
+				1BFBCAFA2CE31AD8007BC0FA /* YangpaMarket-1 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1B1C6A7C2CDB306D00D04DAD /* Resources */ = {
+		1BFBCAF92CE31AD8007BC0FA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B5A12902CDBB0E30054C157 /* Debug.xcconfig in Resources */,
-				1B5A12922CDBB0F30054C157 /* Release.xcconfig in Resources */,
+				1BFBCB782CE32381007BC0FA /* Release.xcconfig in Resources */,
+				1BFBCB6A2CE3226A007BC0FA /* Debug.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1B1C6A7A2CDB306D00D04DAD /* Sources */ = {
+		1BFBCAF72CE31AD8007BC0FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -159,71 +159,9 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1B1C6A922CDB306E00D04DAD /* Debug */ = {
+		1BFBCB072CE31ADA007BC0FA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8GF88PBK7J;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Yangpa-market/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.or.womanup.nambu.kijai.Yangpa-market";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		1B1C6A932CDB306E00D04DAD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B5A12912CDBB0F30054C157 /* Release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 8GF88PBK7J;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Yangpa-market/Info.plist";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.or.womanup.nambu.kijai.Yangpa-market";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		1B1C6A942CDB306E00D04DAD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B5A128F2CDBB0E30054C157 /* Debug.xcconfig */;
+			baseConfigurationReference = 1BFBCB692CE3226A007BC0FA /* Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -285,9 +223,8 @@
 			};
 			name = Debug;
 		};
-		1B1C6A952CDB306E00D04DAD /* Release */ = {
+		1BFBCB082CE31ADA007BC0FA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1B5A12912CDBB0F30054C157 /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -342,23 +279,84 @@
 			};
 			name = Release;
 		};
+		1BFBCB0A2CE31ADA007BC0FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BFBCB692CE3226A007BC0FA /* Debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YangpaMarket-1/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YangpaMarket-1/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.or.womanup.nambu.kijai.YangpaMarket-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BFBCB0B2CE31ADA007BC0FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YangpaMarket-1/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "YangpaMarket-1/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.or.womanup.nambu.kijai.YangpaMarket-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1B1C6A792CDB306D00D04DAD /* Build configuration list for PBXProject "Yangpa-market" */ = {
+		1BFBCAF62CE31AD8007BC0FA /* Build configuration list for PBXProject "YangpaMarket-1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B1C6A942CDB306E00D04DAD /* Debug */,
-				1B1C6A952CDB306E00D04DAD /* Release */,
+				1BFBCB072CE31ADA007BC0FA /* Debug */,
+				1BFBCB082CE31ADA007BC0FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1B1C6A912CDB306E00D04DAD /* Build configuration list for PBXNativeTarget "Yangpa-market" */ = {
+		1BFBCB092CE31ADA007BC0FA /* Build configuration list for PBXNativeTarget "YangpaMarket-1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1B1C6A922CDB306E00D04DAD /* Debug */,
-				1B1C6A932CDB306E00D04DAD /* Release */,
+				1BFBCB0A2CE31ADA007BC0FA /* Debug */,
+				1BFBCB0B2CE31ADA007BC0FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -366,7 +364,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1B1C6A9B2CDB356F00D04DAD /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+		1BFBCB722CE32350007BC0FA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire";
 			requirement = {
@@ -374,7 +372,7 @@
 				minimumVersion = 5.10.1;
 			};
 		};
-		1B1C6A9E2CDB357E00D04DAD /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		1BFBCB872CE32FEB007BC0FA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
 			requirement = {
@@ -385,17 +383,17 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1B1C6A9C2CDB356F00D04DAD /* Alamofire */ = {
+		1BFBCB732CE32350007BC0FA /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1B1C6A9B2CDB356F00D04DAD /* XCRemoteSwiftPackageReference "Alamofire" */;
+			package = 1BFBCB722CE32350007BC0FA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		1B1C6A9F2CDB357E00D04DAD /* Kingfisher */ = {
+		1BFBCB882CE32FEB007BC0FA /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1B1C6A9E2CDB357E00D04DAD /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 1BFBCB872CE32FEB007BC0FA /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 1B1C6A762CDB306D00D04DAD /* Project object */;
+	rootObject = 1BFBCAF32CE31AD8007BC0FA /* Project object */;
 }

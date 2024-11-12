@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APP_URL</key>
+	<string>${APP_URL}</string>
+	<key>SIGN_UP_ROUTER</key>
+	<string>${SIGN_UP_ROUTER}</string>
+	<key>SIGN_IN_ROUTER</key>
+	<string>${SIGN_IN_ROUTER}</string>
+	<key>SALES_ROUTER</key>
+	<string>${SALES_ROUTER}</string>
+	<key>SA_URL</key>
+	<string>${SA_URL}</string>
+</dict>
+</plist>

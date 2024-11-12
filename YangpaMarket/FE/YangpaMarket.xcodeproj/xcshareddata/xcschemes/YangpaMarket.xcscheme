@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1B1C6A7D2CDB306D00D04DAD"
-               BuildableName = "Yangpa-market.app"
-               BlueprintName = "Yangpa-market"
-               ReferencedContainer = "container:Yangpa-market.xcodeproj">
+               BuildableName = "YangpaMarket.app"
+               BlueprintName = "YangpaMarket"
+               ReferencedContainer = "container:YangpaMarket.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1B1C6A7D2CDB306D00D04DAD"
-            BuildableName = "Yangpa-market.app"
-            BlueprintName = "Yangpa-market"
-            ReferencedContainer = "container:Yangpa-market.xcodeproj">
+            BuildableName = "YangpaMarket.app"
+            BlueprintName = "YangpaMarket"
+            ReferencedContainer = "container:YangpaMarket.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1B1C6A7D2CDB306D00D04DAD"
-            BuildableName = "Yangpa-market.app"
-            BlueprintName = "Yangpa-market"
-            ReferencedContainer = "container:Yangpa-market.xcodeproj">
+            BuildableName = "YangpaMarket.app"
+            BlueprintName = "YangpaMarket"
+            ReferencedContainer = "container:YangpaMarket.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
