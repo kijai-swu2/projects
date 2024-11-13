@@ -8,48 +8,41 @@
 import SwiftUI
 
 struct SaleDetail: View {
-    @EnvironmentObject var loginStatus: LoginStatus
     @StateObject var saleProvider = SalesProvider()
     var saleID: Int
     
     var body: some View {
+        
         ScrollView {
             Text("상품 상세")
                 .font(.title3)
                 .padding()
-            VStack {
-//                if let sale = saleProvider. {
-//                    VStack(alignment: .leading) {
-//                        Text("상품명")
-//                        Text(sale.productName)
-//                            .padding()
-//                            .background(Color.textfield)
-//                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
-//                    }
-//                    .padding(.bottom)
-//                    VStack(alignment: .leading) {
-//                        Text("상품 가격")
-//                        Text(sale.productPrice)
-//                            .padding()
-//                            .background(Color.textfield)
-//                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
-//                    }
-//                    .padding(.bottom)
-//                    VStack(alignment: .leading) {
-//                        Text("상품 설명")
-//                        Text(sale.productDesc)
-//                            .padding()
-//                            .background(Color.textfield)
-//                            .clipShape(RoundedRectangle(cornerRadius: 10, style: .circular))
-//                    }
-//                }
-//                    .padding(.horizontal)
-                Spacer()
+            if let sale = saleProvider.sale {
+                VStack {
+                    Text(sale.productName)
+                        .font(.headline)
+                        .padding(.bottom)
+                    Text("\(sale.price)원")
+                        .padding(.bottom)
+                        .foregroundStyle(Color.blue)
+                    VStack(alignment: .leading) {
+                        Text("상품 설명")
+                            .font(.subheadline)
+                        Text(sale.description)
+                    }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+                .padding(.horizontal)
             }
         }
+        .frame(maxWidth: .infinity)
+        .onAppear {
+            saleProvider.getSale(saleID: saleID)
+        }
     }
+    
 }
 
 #Preview {
-    SaleDetail(saleID: 1)
+    SaleDetail(saleID: sampleSale.id)
 }

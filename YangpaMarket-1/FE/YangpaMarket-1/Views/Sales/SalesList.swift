@@ -11,13 +11,15 @@ struct SalesList: View {
     @StateObject var salesProvider = SalesProvider()
     @EnvironmentObject var loginStatus: LoginStatus
     @State var showCreateModal = false
-    @State var saleID: Int?
     
     var body: some View {
         NavigationSplitView {
             List(salesProvider.sales) { sale in
                 NavigationLink {
-                    
+                    SaleDetail(saleID: sale.id)
+                        .onAppear {
+                            print(sale.id)
+                        }
                 } label: {
                     SalesRow(sale: sale)
                 }
